@@ -24,6 +24,11 @@ body {
 
 
 
+details summary::-webkit-details-marker,
+details summary::marker {
+  display: none;
+}
+
 .card-glass {
   background: rgba(255, 255, 255, 0.50);
   backdrop-filter: blur(16px);
