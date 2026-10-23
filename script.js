@@ -6,7 +6,7 @@ const CONFIG = {
   countdownDate: "2026-10-30T08:30:00",
 
   // ---- Registration Deadline ----
-  registrationDeadline: "2026-10-20T23:59:59",
+  registrationDeadline: "2026-10-29T23:59:59+02:00",
 
   eventEndDate: "2026-10-31T00:00:00",
 
@@ -18,7 +18,6 @@ const CONFIG = {
   venueZoom: 15,
   googleMapsURL: "https://www.google.com/maps?q=-26.19053,28.02675",
 };
-
 
 function setupRegistrationButtons() {
   const buttons = [
@@ -60,8 +59,6 @@ function setupRegistrationButtons() {
     }
   });
 }
-
-
 
 function startCountdown() {
   const target = new Date(CONFIG.countdownDate).getTime();
@@ -111,7 +108,6 @@ function startCountdown() {
   setInterval(update, 1000);
 }
 
-
 function setupAgendaTabs() {
   const tabs = document.querySelectorAll(".agenda-tab");
   const panels = document.querySelectorAll(".agenda-content");
@@ -127,7 +123,6 @@ function setupAgendaTabs() {
     });
   });
 }
-
 
 function setupMobileMenu() {
   const toggle = document.getElementById("mobile-menu-toggle");
@@ -148,7 +143,6 @@ function setupMobileMenu() {
     });
   });
 }
-
 
 function setupScrollSpy() {
   const sections = document.querySelectorAll("section[id]");
@@ -175,7 +169,6 @@ function setupScrollSpy() {
 
   window.addEventListener("scroll", onScroll, { passive: true });
 }
-
 
 function setupMap() {
   const container = document.getElementById("map-container");
@@ -257,7 +250,6 @@ function setupOrganizerDots() {
     { passive: true },
   );
 }
-
 
 document.addEventListener("DOMContentLoaded", () => {
   setupRegistrationButtons();
