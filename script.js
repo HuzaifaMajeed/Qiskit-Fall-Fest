@@ -6,7 +6,7 @@ const CONFIG = {
   countdownDate: "2026-10-30T08:30:00",
 
   // ---- Registration Deadline ----
-  registrationDeadline: "2026-10-29T23:59:59+02:00",
+  registrationDeadline: "2026-10-29T12:00:00+02:00",
 
   eventEndDate: "2026-10-31T00:00:00",
 
