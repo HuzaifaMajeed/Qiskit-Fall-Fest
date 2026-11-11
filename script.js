@@ -3,14 +3,14 @@ const CONFIG = {
   registrationURL:
     "https://docs.google.com/forms/d/e/1FAIpQLSeSYSkiOpoS9UvjliWZV_S3gwaJkXe58MdgKMEfTmczu-oiIQ/viewform",
 
-  countdownDate: "2026-10-30T08:30:00",
+  countdownDate: "2026-11-23T08:30:00",
 
   // ---- Registration Deadline ----
-  registrationDeadline: "2026-10-29T12:00:00+02:00",
+  registrationDeadline: "2026-11-17T12:00:00+02:00",
 
-  eventEndDate: "2026-10-31T00:00:00",
+  eventEndDate: "2026-11-25T00:00:00",
 
-  venueName: "MSL004",
+  venueName: "MSL004/MSL005",
   venueAddress:
     "T. W. Kambule Mathematical Sciences Building, Braamfontein Campus West, Wits University",
   venueLatitude: -26.19053,
