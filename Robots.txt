@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://qiskit-fall-fest-five.vercel.app/sitemap.xml
