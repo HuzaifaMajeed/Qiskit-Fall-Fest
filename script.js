@@ -25,7 +25,8 @@ function setupRegistrationButtons() {
     document.getElementById("mobile-register-btn"),
     document.getElementById("hero-register-btn"),
     document.getElementById("sidebar-register-btn"),
-  ];
+  ].filter(Boolean);
+  if (!buttons.length) return; // event is over: buttons are now plain links in index.html
 
   const deadline = new Date(CONFIG.registrationDeadline).getTime();
   const isClosed = Date.now() >= deadline;
@@ -66,6 +67,7 @@ function startCountdown() {
   const hoursEl = document.getElementById("countdown-hours");
   const minsEl = document.getElementById("countdown-mins");
   const secsEl = document.getElementById("countdown-secs");
+  if (!daysEl) return; // countdown replaced by the recap box in index.html
 
   function update() {
     const now = Date.now();
